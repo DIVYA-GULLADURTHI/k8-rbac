@@ -18,7 +18,7 @@ metadata:
 subjects:
 # You can specify more than one "subject"
 - kind: ServiceAccount
-  name: roboshop-mysql-secret-reader # "name" is case sensitive
+  name: roboshop-mysql-secret-reader-1 # "name" is case sensitive
   namespace: roboshop
 roleRef:
   # "roleRef" specifies the binding to a Role / ClusterRole
@@ -34,7 +34,7 @@ metadata:
   labels:
     purpose: sa
 spec:
-  serviceAccountName: roboshop-mysql-secret-reader 
+  serviceAccountName: roboshop-mysql-secret-reader-1
   containers:
   - name: awscli
     image: amazon/aws-cli
