@@ -3,17 +3,17 @@ data:
   mapRoles: |
     - rolearn: arn:aws:iam::315069654700:role/eksctl-roboshop-dev-nodegroup-robo-NodeInstanceRole-TtRghdCKdBjV
       groups:
-      - system:bootstrappers
+      - system:bootstrappers 
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
       - roboshop-trainee
       userarn: arn:aws:iam::485067906741:user/suresh
-      username: suresh
+      username: suresh 
 kind: ConfigMap
-metadata:
+metadata: 
   creationTimestamp: "2025-12-11T07:11:58Z"
   name: aws-auth
   namespace: kube-system
-  uid: 62c4714a-a158-4c44-b0dd-684232d98946
+  uid: 62c4714a-a158-4c44-b0dd-684232d98946  
